@@ -1,0 +1,25 @@
+.Home{
+    background-color: beige;
+}
+
+.topic-group{
+    text-align: left;
+    padding: 40px 0;
+}
+
+.topic-header{
+    background-color: white;
+    border-left: 15px solid orange;
+    padding-left: 10px;
+    box-shadow: 1px 0 5px 1px #999;
+}
+
+.topic-contents{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contents-header{
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
