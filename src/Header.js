@@ -8,7 +8,7 @@ export default class Header extends React.Component {
             <div className="header">
                 <div className="slide">
                   <img src={hero} alt="hero"/>
-                  <h1 className="introduction-title">日高 智大のポートフォリオ(テスト配信用)</h1>
+                  <h1 className="introduction-title">Tomohiro Hidaka's Portfolio'</h1>
                 </div>
 	    </div>
         );

@@ -1,3 +1,10 @@
+@media screen and (max-width: 480px){
+    html {
+        font-size: 62.5%;
+    }
+}
+
+
 .Home{
     background-color: beige;
 }
@@ -8,6 +15,7 @@
 }
 
 .topic-header{
+    color: black;
     background-color: white;
     border-left: 15px solid orange;
     padding-left: 10px;
@@ -17,9 +25,81 @@
 .topic-contents{
     width: 90%;
     margin: 0 auto;
+    margin-bottom: 2.0rem;
 }
 
 .contents-header{
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     padding-bottom: 5px;
+}
+
+.skill-group{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-content{
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+    margin: 0.8rem;
+    padding: 0.8rem;
+}
+
+.sha-white{
+    box-shadow: 1px 0 5px 1px white;
+}
+
+.sha-aqua{
+    box-shadow: 1px 0 5px 1px aqua;
+}
+
+.sha-lime{
+    box-shadow: 1px 0 5px 1px lime;
+}
+
+
+.sha-orange{
+    box-shadow: 1px 0 5px 1px orange;
+}
+
+
+
+.skill-content:hover{
+    opacity: 1.0;
+    transition-duration: 0.1s;
+}
+
+.skill-content:hover >.skill-icon >img{
+    opacity: 1.0;
+    transition-duration: 0.1s;
+    width: 100%;
+    height: 100%;
+}
+
+.skill-icon{
+    position: relative;
+    width: 18vw;
+    height: 18vw;
+    max-width: 90px;
+    max-height: 90px;
+    text-align:center;
+}
+
+.skill-icon img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    opacity: 0.8;
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    vertical-align: middle;
+}
+
+.skill-name{
+    font-size: 1.0rem;
+    border-bottom: 1px solid white;
 }
