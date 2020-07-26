@@ -1,15 +1,17 @@
 import React from 'react';
-import ReactTooltip from 'react-tooltip';
 
-import { Tab,Tabs } from 'react-bootstrap';
+import ReactTooltip from 'react-tooltip';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faStar, faPen } from '@fortawesome/free-solid-svg-icons';
 
 import { Link } from 'react-router-dom';
+
 
 import Header from './Header';
 import Stars from './Stars';
 
 import './Home.css';
-import './Header.css';
+
 import { labSkills, workSkills, etcSkills, selfStudySkills } from './skills.js';
 
 export default class Home extends React.Component {
@@ -18,32 +20,19 @@ export default class Home extends React.Component {
             <div className="Home">
               <Header/>
               <div>
-                <navbar className="nav nav-bar">
-
-                </navbar>
-
                 <section className="container">
-
-                  <div className="topic-group">
-                    <h1 className="topic-header">自己紹介</h1>
+                  <div id="about" className="topic-group back-about">
+                    <h1 className="topic-header"><span className="icon"><FontAwesomeIcon icon={faUser}/></span>About Me</h1>
                     <div className="topic-contents">
+                      はじめまして、日高です。現在金融系のSIに勤めている社会人2年目の27才(93年7月生まれ)です。
+                      大学・大学院と情報系の学科を専攻していて、研究室では主にC++を使って画像処理系の研究を行っていました。
+                      <br/><br/>
+                      入社後はSIのような管理職よりも、研究室のようにもっと柔軟な思考で技術に触れる方が自分に合っているのではないかと感じました。エンジニア特有の独特な空気感・コミュニティも好きです。
                     </div>
-
-                    {/* <Tabs defaultActiveKey="background-edu"> */}
-                    {/*   <Tab eventKey="background-edu" title="学歴"> */}
-                    {/*     <div> */}
-                    {/*       <h5></h5> */}
-                    {/*     </div> */}
-                    {/*   </Tab> */}
-                    {/*   <Tab eventKey="background-work" title="職歴"> */}
-
-                    {/*   </Tab> */}
-                    {/* </Tabs> */}
-
                   </div>
 
-                  <div className="topic-group">
-                    <h1 className="topic-header">スキルセット</h1>
+                  <div id="skills" className="topic-group back-skills">
+                    <h1 className="topic-header"><span className="icon"><FontAwesomeIcon icon={faStar}/></span>Skills</h1>
                     <div className="topic-contents">
                       <h4 className="contents-header">研究室(2年)</h4>
                       <h5>大学院時代に研究（画像処理系）で使用していた言語・ライブラリです。</h5>
@@ -67,7 +56,7 @@ export default class Home extends React.Component {
 
                     <div className="topic-contents">
                       <h4 className="contents-header">実務経験(1年)</h4>
-                      <h5>現在、会社(実務)で使用している言語・フレームワークです。</h5>
+                      <h5>現在、会社(実務)で使用している言語・フレームワーク等です。</h5>
 
                       <div className="skill-group">
                         {workSkills.map((workSkill)=> {
@@ -128,9 +117,14 @@ export default class Home extends React.Component {
                         })}
                       </div>
                     </div>
-
                   </div>
 
+                  <div id="work" className="topic-group back-work">
+                    <h1 className="topic-header"><span className="icon"><FontAwesomeIcon icon={faPen}/></span>Work</h1>
+                    <div className="topic-contents">
+                      作成した成果物です。
+                    </div>
+                  </div>
                 </section>
               </div>
             </div>
