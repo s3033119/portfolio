@@ -1,7 +1,72 @@
 .navbar{
-    position: -webkit-sticky; /* safari用 */
-    position: sticky;
-    top: 0;
+    background-color: transparent;
+}
+
+.nav{
+    margin-left:auto;
+    padding-right: 5vw;
+}
+
+.header-icon-wrapper{
+    display: table;
+    opacity: 0.8;
+    width:  3.5rem;
+    height: 3.5rem;
+    border-radius:30px;
+    background-color: white;
+    vertical-align: middle;
+    box-shadow: 1px 1px 1px 1px #aaaaaa;
+    margin: 0 auto;
+}
+
+.header-icon{
+    display: table-cell;
+    width:  100%;
+    height: 100%;
+    font-size: 1.5rem;
+    text-align:center;
+    margin: 0 auto;
+}
+
+.icon-text{
+    display: inline-block;
+    width: 5.0rem;
+    color: transparent;
+    font-weight: bold;
+    font-size: 1.0rem;
+}
+
+.header-icon-wrapper:hover{
+    transition-duration: 0.2s;
+}
+
+.header-icon-wrapper:hover + .icon-text{
+    color: white;
+}
+
+.header-icon-wrapper:hover > .header-icon{
+    font-size: 1.8rem;
+    transition-duration: 0.2s;
+}
+
+.icon-top:hover{
+    color: #999999;
+    box-shadow: 1px 1px 3px 3px white;
+}
+
+.icon-about:hover{
+    color: #4169E1;
+    box-shadow: 1px 1px 3px 3px #4169E1;
+}
+
+.icon-skills:hover{
+    color: gold;
+    box-shadow: 1px 1px 3px 3px gold;
+}
+
+.icon-work:hover{
+    color: #b22222;
+    box-shadow: 1px 1px 3px 3px #b22222;
 }
 
 .slide{

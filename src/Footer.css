@@ -1,0 +1,27 @@
+.Footer{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    padding: 20px;
+}
+
+.footer-group{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-content{
+    width: 300px;
+    text-align: left;
+}
+
+.footer-content span{
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
+
+.footer-title{
+    font-size: 4.0rem;
+    color: lime;
+}

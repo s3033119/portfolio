@@ -1,5 +1,7 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faUser, faStar, faPen } from '@fortawesome/free-solid-svg-icons';
 
 import hero from './images/hero.png';
 
@@ -15,17 +17,20 @@ export default class Header extends React.Component {
         };
 
         return(
-            <div className="header">
+            <div className="Header">
+              <Navbar fixed="top">
+                <Nav className="nav">
+                  <Nav.Link href="#"><span className="header-icon-wrapper icon-top"><FontAwesomeIcon icon={faHome} className="header-icon"/></span><span className="icon-text">Top</span></Nav.Link>
+                  <Nav.Link href="#about"><span className="header-icon-wrapper icon-about"><FontAwesomeIcon icon={faUser} className="header-icon"/></span><span className="icon-text">About Me</span></Nav.Link>
+                  <Nav.Link href="#skills"><span className="header-icon-wrapper icon-skills"><FontAwesomeIcon icon={faStar} className="header-icon"/></span><span className="icon-text">Skills</span></Nav.Link>
+                  <Nav.Link href="#work"><span className="header-icon-wrapper icon-work"><FontAwesomeIcon icon={faPen} className="header-icon"/></span><span className="icon-text">Work</span></Nav.Link>
+                </Nav>
+
+              </Navbar>
+
               <div className="slide" style={backImgStyle}>
                 <h1 className="introduction-title">Tomohiro Hidaka's Portfolio</h1>
               </div>
-                <Navbar className="navbar" bg="dark" variant="dark">
-                  <Nav>
-                    <Nav.Link href="#about">About Me</Nav.Link>
-                    <Nav.Link href="#skills">Skills</Nav.Link>
-                    <Nav.Link href="#work">Work</Nav.Link>
-                  </Nav>
-                </Navbar>
 
 	    </div>
         );
