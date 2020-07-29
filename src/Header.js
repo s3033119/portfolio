@@ -19,13 +19,16 @@ export default class Header extends React.Component {
         return(
             <div className="Header">
               <Navbar fixed="top">
+                <Navbar.Brand>
+                  <h1 className="navbar-title">Portfolio</h1>
+                  <p  className="navbar-subtitle">● Tomohiro Hidaka 2020</p>
+                </Navbar.Brand>
                 <Nav className="nav">
-                  <Nav.Link href="#"><span className="header-icon-wrapper icon-top"><FontAwesomeIcon icon={faHome} className="header-icon"/></span><span className="icon-text">Top</span></Nav.Link>
-                  <Nav.Link href="#about"><span className="header-icon-wrapper icon-about"><FontAwesomeIcon icon={faUser} className="header-icon"/></span><span className="icon-text">About Me</span></Nav.Link>
+                  <Nav.Link href="#home"><span className="header-icon-wrapper icon-top"><FontAwesomeIcon icon={faHome} className="header-icon"/></span><span className="icon-text">Top</span></Nav.Link>
+                  <Nav.Link href="#about"><span className="header-icon-wrapper icon-about"><FontAwesomeIcon icon={faUser} className="header-icon"/></span><span className="icon-text">About</span></Nav.Link>
                   <Nav.Link href="#skills"><span className="header-icon-wrapper icon-skills"><FontAwesomeIcon icon={faStar} className="header-icon"/></span><span className="icon-text">Skills</span></Nav.Link>
                   <Nav.Link href="#work"><span className="header-icon-wrapper icon-work"><FontAwesomeIcon icon={faPen} className="header-icon"/></span><span className="icon-text">Work</span></Nav.Link>
                 </Nav>
-
               </Navbar>
 
               <div className="slide" style={backImgStyle}>

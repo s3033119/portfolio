@@ -1,10 +1,29 @@
 .navbar{
-    background-color: transparent;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .nav{
     margin-left:auto;
     padding-right: 5vw;
+    align-items: center;
+}
+
+.navbar-brand{
+    width: 20vw;
+    text-align: left;
+}
+
+.navbar-title{
+    color: lime;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-subtitle{
+    color: white;
+    font-align: left;
+    margin: 0;
+    padding: 0;
 }
 
 .header-icon-wrapper{
@@ -31,7 +50,7 @@
 .icon-text{
     display: inline-block;
     width: 5.0rem;
-    color: transparent;
+    color: rgba(255,255,255,0.3);
     font-weight: bold;
     font-size: 1.0rem;
 }
