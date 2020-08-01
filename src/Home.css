@@ -4,24 +4,18 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen /* and (min-width: 768px) */ and (max-width: 1023px){
     html {
         font-size: 75%;
     }
 }
 
 
-@media screen and (min-width: 480px) and (max-width: 767px){
-    html {
-        font-size: 62.5%;
-    }
-}
-
-@media screen and (max-width: 479px){
-    html {
-        font-size: 50%;
-    }
-}
+/* @media screen and  (max-width: 767px){ */
+/*     html { */
+/*         font-size: 62.5%; */
+/*     } */
+/* } */
 
 .Home{
     background-color: #2f2f2f;
@@ -74,77 +68,6 @@
     padding-bottom: 5px;
 }
 
-.skill-group{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.skill-content{
-    display: flex;
-    flex-direction: column;
-    opacity: 0.8;
-    margin: 0.8rem;
-    padding: 0.8rem;
-}
-
-.sha-white{
-    box-shadow: 1px 0 5px 1px white;
-}
-
-.sha-aqua{
-    box-shadow: 1px 0 5px 1px aqua;
-}
-
-.sha-lime{
-    box-shadow: 1px 0 5px 1px lime;
-}
-
-
-.sha-orange{
-    box-shadow: 1px 0 5px 1px orange;
-}
-
-.skill-content:hover{
-    opacity: 1.0;
-    transition-duration: 0.1s;
-}
-
-.skill-content:hover >.skill-icon >img{
-    opacity: 1.0;
-    transition-duration: 0.1s;
-    width: 100%;
-    height: 100%;
-}
-
-.skill-icon{
-    position: relative;
-    width: 18vw;
-    height: 18vw;
-    max-width: 90px;
-    max-height: 90px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    text-align:center;
-}
-
-.skill-icon img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    -webkit-transform: translateY(-50%) translateX(-50%);
-    opacity: 0.8;
-    width: 90%;
-    height: 90%;
-    background-color: white;
-    vertical-align: middle;
-}
-
-.skill-name{
-    font-size: 1.0rem;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white
-}
 
 .work-group{
     margin: 2.0rem 0;
@@ -188,3 +111,81 @@
 .work-link:hover{
     color: aqua;
 }
+
+
+/*-------ON/OFFスイッチ-------*/
+.switch__label {
+    width: 37px;
+    position: relative;
+    display: inline-block;
+    padding-top: 3px;
+}
+.switch__content {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    border-radius: 7px;
+    height: 14px;
+    background-color: rgba(255,255,255,0.4);
+    -webkit-transition: all .1s .4s;
+    -moz-transition: all .1s .4s;
+    -ms-transition: all .1s .4s;
+    -o-transition: all .1s .4s;
+    transition: all .1s .4s;
+    overflow: hidden;
+}
+
+.switch__content:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 7px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.switch__input {
+    display: none;
+}
+.switch__circle {
+    display: block;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #F1F1F1;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.switch__input:checked ~ .switch__circle {
+    left: 18px;
+    background-color: #00ff00;
+}
+.switch__input:checked ~ .switch__content {
+
+    border-color: transparent;
+    -webkit-transition: all 0s;
+    -moz-transition: all 0s;
+    -ms-transition: all 0s;
+    -o-transition: all 0s;
+    transition: all 0s;
+}
+
+.switch__input:checked ~ .switch__content:after {
+    background-color: rgba(0,255,0,.5);
+    width: 100%;
+}
+
+/*------------------------------------------------*/

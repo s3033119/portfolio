@@ -12,9 +12,9 @@ export default class Footer extends React.Component {
             <div className="Footer">
               <ul className="footer-link-list">
                 <li className="footer-link"><a href="#home"><FontAwesomeIcon icon={faHome} className="footer-link-icon"/>Top</a></li>
-                <li className="footer-link"><a href="#about"><FontAwesomeIcon icon={faUser} className="footer-link-icon"/>User</a></li>
-                <li className="footer-link"><a href="#skills"><FontAwesomeIcon icon={faStar} className="footer-link-icon"/>Star</a></li>
-                <li className="footer-link"><a href="#work"><FontAwesomeIcon icon={faPen} className="footer-link-icon"/>Pen</a></li>
+                <li className="footer-link"><a href="#about"><FontAwesomeIcon icon={faUser} className="footer-link-icon"/>About Me</a></li>
+                <li className="footer-link"><a href="#skills"><FontAwesomeIcon icon={faStar} className="footer-link-icon"/>Skills</a></li>
+                <li className="footer-link"><a href="#work"><FontAwesomeIcon icon={faPen} className="footer-link-icon"/>Work</a></li>
               </ul>
               <div className="footer-group">
                 <div className="footer-content">
