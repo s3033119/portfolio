@@ -1,6 +1,7 @@
 .skill-group{
     display: flex;
     flex-wrap: wrap;
+    margin: 20px 0;
 }
 
 .skill-content{
@@ -50,5 +51,24 @@
 .skill-name{
     font-size: 1.0rem;
     border-top: 1px solid white;
-    border-bottom: 1px solid white
+    border-bottom: 1px solid white;
+}
+
+.simple-skill-list{
+    margin: 10px 0;
+}
+
+.simple-skill-list td, .simple-skill-list th{
+    height: 100%;
+    border: 1px solid white;
+    padding: 5px;
+}
+
+.simple-skill-name{
+    width: 6em;
+}
+
+.simple-skill-description{
+    font-size: 0.8em;
+    line-height: 1.6em;
 }

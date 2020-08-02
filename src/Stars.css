@@ -1,5 +1,6 @@
 .star-rating{
     position: relative;
+    display:inline-block;
     width: 5em;
     height: 1em;
 }
