@@ -19,14 +19,12 @@ export default class Home extends React.Component {
                   <table>
                     <tr className="simple-skill-list">
                       <th>スキル名</th>
-                      <th>習熟度</th>
                       <th>詳細</th>
                     </tr>
                     {this.props.skills.map((skill)=> {
                         return(
                             <tr className="simple-skill-list">
-                              <td className="simple-skill-name">{skill.name}</td>
-                              <td><Stars rate={skill.rate}/></td>
+                              <td className="simple-skill-name">{skill.name}<br/><Stars rate={skill.rate}/></td>
                               <td className="simple-skill-description">{skill.description}</td>
                             </tr>
                         );
