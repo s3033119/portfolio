@@ -3,7 +3,6 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faStar, faPen } from '@fortawesome/free-solid-svg-icons';
 
-import { Link } from 'react-router-dom';
 
 
 import Header from './Header';
@@ -48,7 +47,7 @@ export default class Home extends React.Component {
                   <section id="skills" className="topic-group back-skills">
                     <h1 className="topic-header"><span className="icon"><FontAwesomeIcon icon={faStar}/></span>Skills</h1>
                     <div className="switch">
-                      <span>シンプル表示：</span>
+                      <span>リスト表示：</span>
                       <label className="switch__label">
                         <input type="checkbox" className="switch__input" onChange={() => {this.changeDisplay()}} value={this.state.isSimple} checked={this.state.isSimple}/>
                         <span className="switch__content"></span>
@@ -60,7 +59,6 @@ export default class Home extends React.Component {
                     <Fade>
                       <div className="topic-contents">
                         <h4 className="contents-header">研究室(2年)</h4>
-                        <h5>大学院時代に研究（画像処理系）で使用していた言語・ライブラリです。</h5>
                         <Skills skills={labSkills}
                                 color="aqua"
                                 isSimple={this.state.isSimple}
@@ -70,7 +68,6 @@ export default class Home extends React.Component {
                     <Fade>
                       <div className="topic-contents">
                         <h4 className="contents-header">実務経験(1年)</h4>
-                        <h5>現在、会社(実務)で使用している言語・フレームワーク等です。</h5>
                         <Skills skills={workSkills}
                                 color="lime"
                                 isSimple={this.state.isSimple}
@@ -81,7 +78,6 @@ export default class Home extends React.Component {
                     <Fade>
                       <div className="topic-contents">
                         <h4 className="contents-header">独学</h4>
-                        <h5>独学である程度取得してる言語・フレームワークです。</h5>
                         <Skills skills={selfStudySkills}
                                 color="orange"
                                 isSimple={this.state.isSimple}
@@ -111,9 +107,10 @@ export default class Home extends React.Component {
                           <div className="work-body">
                             <h3 className="work-title">ポートフォリオ</h3>
                             <p className="work-text">ポートフォリオ（このページ）です。</p>
-                            <a className="work-link"href="https://github.com/s3033119/portfolio" target="_blank" rel="noopener">→ GitHub</a>
+                            <a className="work-link"href="https://github.com/s3033119/portfolio" target="_blank" rel="noopener noreferrer">→ GitHub</a>
                           </div>
                         </div>
+
                       </div>
                     </div>
                   </section>

@@ -4,6 +4,11 @@
     margin: 20px 0;
 }
 
+.simple-table{
+    table-layout: fixed;
+    width: 100%;
+}
+
 .skill-content{
     display: flex;
     flex-direction: column;
@@ -65,10 +70,11 @@
 }
 
 .simple-skill-name{
-    width: 6em;
+    width: 8em;
 }
 
 .simple-skill-description{
+    width: 100%;
     font-size: 0.8em;
     line-height: 1.6em;
 }

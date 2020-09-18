@@ -7,19 +7,16 @@ import Stars from './Stars';
 import './Skills.css';
 
 export default class Home extends React.Component {
-    constructor(props){
-        super(props);
-    }
 
     render(){
         return(
             <div className="skill-group">
               {/* シンプル表示 */}
               { this.props.isSimple && (
-                  <table>
+                  <table className="simple-table">
                     <tr className="simple-skill-list">
-                      <th>スキル名</th>
-                      <th>詳細</th>
+                      <th className="simple-skill-name">スキル名</th>
+                      <th className="simple-skill-description">詳細</th>
                     </tr>
                     {this.props.skills.map((skill)=> {
                         return(
